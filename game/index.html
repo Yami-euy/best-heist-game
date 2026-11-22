@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Star of Merdeka — a museum heist</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0d0a08;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  #wrap {
+    width: 1280px;
+    max-width: 100vw;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #241d18;
+    cursor: crosshair;
+  }
+  #note {
+    color: #8d8578;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 0 0;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="note">The Star of Merdeka — A/D gerak · W/Spasi lompat · W/S panjat tangga · Shift sneak · E ambil berlian / hack · Q smoke · X stun polisi · F jammer (matikan kamera) · Klik: lempar koin — Loot kecil diambil OTOMATIS saat disentuh</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
